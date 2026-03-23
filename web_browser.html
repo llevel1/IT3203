@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Browser | Understanding the Web</title>
+  <title>Web Browser</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header id="main-header">
     <div class="header-container">
-      <h1 class="site-title">Understanding the Web</h1>
+      <h1 class="site-title">The Web Browser: Past and Future</h1>
+
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -24,67 +26,75 @@
   </header>
 
   <div class="container">
-    <aside class="sidebar">
-      <h2>Browser Basics</h2>
+    <div class="sidebar">
+      <h2>Browser Facts</h2>
       <ul>
-        <li>Requests web pages</li>
-        <li>Interprets HTML and CSS</li>
-        <li>Displays content for users</li>
+        <li>Browsers retrieve web pages</li>
+        <li>They display HTML to users</li>
+        <li>They use HTTP requests</li>
+        <li>They can use cached data</li>
       </ul>
-    </aside>
+    </div>
 
-    <main class="content">
+    <div class="content">
       <h2>What Is a Web Browser?</h2>
       <p>
-        A web browser is a software application used to access websites and online resources.
-        It sends requests to web servers, receives data, and displays the results in a readable format.
+        A web browser is the application that lets users access information on websites.
+        When a user types a URL into the address bar, the browser gets the files from a web server or from the cache and displays them on the device screen. :contentReference[oaicite:5]{index=5}
       </p>
 
-      <h3>Examples of Browsers</h3>
+      <h3>Main Browser Components</h3>
       <ul>
-        <li>Google Chrome</li>
-        <li>Mozilla Firefox</li>
-        <li>Microsoft Edge</li>
-        <li>Safari</li>
+        <li>User interface</li>
+        <li>Browser engine</li>
+        <li>Rendering engine</li>
+        <li>Networking</li>
+        <li>UI backend</li>
+        <li>JavaScript interpreter</li>
+        <li>Data storage</li>
       </ul>
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Google_Chrome_icon_%282011%29.png" alt="Browser icon example">
-
-      <h3>What Browsers Do</h3>
+      <h3>How a Browser Works</h3>
       <ol>
-        <li>Read the URL entered by the user</li>
-        <li>Send a request to the appropriate server</li>
-        <li>Download HTML, CSS, images, and scripts</li>
-        <li>Render the page for the user</li>
+        <li>The user enters a URL or search term</li>
+        <li>The browser checks whether it is a search or a URL</li>
+        <li>The cache is checked first</li>
+        <li>If needed, the browser performs a DNS lookup</li>
+        <li>The browser connects to the server and sends a request</li>
+        <li>The response is received and prepared for rendering</li>
+        <li>The page is displayed to the user</li>
       </ol>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Google_Chrome_icon_%282011%29.png/512px-Google_Chrome_icon_%282011%29.png" alt="Browser icon">
 
       <table>
         <tr>
-          <th>Browser</th>
-          <th>Main Use</th>
+          <th>Component</th>
+          <th>Purpose</th>
         </tr>
         <tr>
-          <td>Chrome</td>
-          <td>General browsing and strong compatibility</td>
+          <td>User Interface</td>
+          <td>The visible parts like buttons and address bar</td>
         </tr>
         <tr>
-          <td>Firefox</td>
-          <td>Privacy features and open-source development</td>
+          <td>Rendering Engine</td>
+          <td>Displays the content on the screen</td>
         </tr>
         <tr>
-          <td>Safari</td>
-          <td>Default browser on Apple devices</td>
+          <td>Networking</td>
+          <td>Sends and receives HTTP requests</td>
         </tr>
         <tr>
-          <td>Edge</td>
-          <td>Microsoft browser with Chromium support</td>
+          <td>Data Storage</td>
+          <td>Stores local data like bookmarks and cookies</td>
         </tr>
       </table>
-    </main>
+    </div>
   </div>
 
   <footer>
-    <p>&copy; 2026 Understanding the Web</p>
+    <p>Created by Leann Levelsmier</p>
   </footer>
+
 </body>
 </html>
