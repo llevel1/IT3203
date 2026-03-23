@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Web Browser</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Browser | Understanding the Web</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header id="main-header">
-  <div class="header-container">
-    <h1 class="site-title">Understanding the Web</h1>
+    <div class="header-container">
+      <h1 class="site-title">Understanding the Web</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="key_concepts.html">Key Concepts</a></li>
+          <li><a href="web_browser.html">Web Browser</a></li>
+          <li><a href="web_history.html">Web History</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <nav>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Browser Basics</h2>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="key_concepts.html">Key Terms</a></li>
-        <li><a href="web_browser.html">The Web Browser</a></li>
-        <li><a href="web_history.html">History of The World Wide Web</a></li>
-        <li><a href="references.html">References</a></li>
+        <li>Requests web pages</li>
+        <li>Interprets HTML and CSS</li>
+        <li>Displays content for users</li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </aside>
 
-  <main>
-    <h2>The Web Browser</h2>
-    <p>This is the home page of my six-page website.</p>
-  </main>
+    <main class="content">
+      <h2>What Is a Web Browser?</h2>
+      <p>
+        A web browser is a software application used to access websites and online resources.
+        It sends requests to web servers, receives data, and displays the results in a readable format.
+      </p>
+
+      <h3>Examples of Browsers</h3>
+      <ul>
+        <li>Google Chrome</li>
+        <li>Mozilla Firefox</li>
+        <li>Microsoft Edge</li>
+        <li>Safari</li>
+      </ul>
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Google_Chrome_icon_%282011%29.png" alt="Browser icon example">
+
+      <h3>What Browsers Do</h3>
+      <ol>
+        <li>Read the URL entered by the user</li>
+        <li>Send a request to the appropriate server</li>
+        <li>Download HTML, CSS, images, and scripts</li>
+        <li>Render the page for the user</li>
+      </ol>
+
+      <table>
+        <tr>
+          <th>Browser</th>
+          <th>Main Use</th>
+        </tr>
+        <tr>
+          <td>Chrome</td>
+          <td>General browsing and strong compatibility</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>Privacy features and open-source development</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>Default browser on Apple devices</td>
+        </tr>
+        <tr>
+          <td>Edge</td>
+          <td>Microsoft browser with Chromium support</td>
+        </tr>
+      </table>
+    </main>
+  </div>
 
   <footer>
-    <p> 2026 Lhaman1's Website for IT 3203</p>
+    <p>&copy; 2026 Understanding the Web</p>
   </footer>
 </body>
 </html>
