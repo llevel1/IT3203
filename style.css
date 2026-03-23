@@ -3,15 +3,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f7fb;
+  background-color: #f2f2f2;
   color: #222;
 }
 
 /* ID selector */
 #main-header {
-  background-color: #d4af37;
+  background-color: #d4af37;   /* gold */
   color: #111;
-  border-bottom: 4px solid #a88820;
+  border-bottom: 4px solid #8f7622;
   padding: 0 20px;
 }
 
@@ -53,7 +53,7 @@ nav a {
   display: inline-block;
   text-decoration: none;
   color: #111;
-  background-color: #f3dc84;
+  background-color: #f0d97a;
   padding: 10px 14px;
   border: 2px solid #111;
   border-radius: 6px;
@@ -77,22 +77,22 @@ nav a:hover {
 }
 
 .sidebar {
-  background-color: #e8f1f8;
+  background-color: #d9d9d9;
   padding: 20px;
-  border: 2px solid #aac4da;
+  border: 2px solid #8c8c8c;
   border-radius: 8px;
 }
 
 .content {
-  background-color: white;
+  background-color: #ffffff;
   padding: 25px;
-  border: 2px solid #c8d6e5;
+  border: 2px solid #a6a6a6;
   border-radius: 8px;
 }
 
 h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
-  color: #163853;
+  color: #111;
   margin-top: 0;
 }
 
@@ -103,16 +103,16 @@ p, li {
 img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #999;
+  border: 2px solid #777;
   border-radius: 8px;
   margin: 10px 0;
 }
 
 .highlight {
-  background-color: #fff3cd;
-  color: #5c4400;
+  background-color: #e6e6e6;
+  color: #111;
   padding: 10px;
-  border-left: 5px solid #ffb703;
+  border-left: 5px solid #444;
   margin: 15px 0;
 }
 
@@ -123,7 +123,7 @@ table {
 }
 
 table, th, td {
-  border: 1px solid #888;
+  border: 1px solid #666;
 }
 
 th, td {
@@ -132,7 +132,7 @@ th, td {
 }
 
 th {
-  background-color: #d9eaf7;
+  background-color: #cccccc;
 }
 
 footer {
