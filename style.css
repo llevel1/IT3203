@@ -55,12 +55,6 @@ nav a:hover {
   gap: 20px;
 }
 
-.sidebar {
-  width: 25%;
-  background-color: #d9d9d9;
-  padding: 15px;
-  border: 1px solid black;
-}
 
 .content {
   width: 75%;
