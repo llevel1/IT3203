@@ -1,3 +1,4 @@
+/* This styles the whole page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,37 +6,44 @@ body {
   color: black;
 }
 
+/* This styles the top header area */
 #main-header {
   background-color: gold;
   padding: 15px;
   border-bottom: 2px solid black;
 }
 
+/* This uses flex to put the title on the left and nav on the right */
 .header-container {
   display: flex;
   align-items: center;
 }
 
+/* This styles the website title */
 .site-title {
   margin: 0;
   font-size: 28px;
 }
 
+/* Pushes the navigation to the right side */
 nav {
   margin-left: auto;
 }
 
+/* Removes bullets and spacing from nav list */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
+/* Makes nav links appear in one row */
 nav li {
   display: inline;
   margin-left: 10px;
 }
 
+/* Styles the navigation links */
 nav a {
   text-decoration: none;
   color: black;
@@ -44,17 +52,20 @@ nav a {
   background-color: lightgray;
 }
 
+/* Changes link color when mouse hovers over it */
 nav a:hover {
   background-color: black;
   color: white;
 }
 
+/* This creates the main page layout with sidebar and content */
 .container {
   display: flex;
   margin: 20px;
   gap: 20px;
 }
 
+/* Styles the left sidebar */
 .sidebar {
   width: 25%;
   background-color: #d9d9d9;
@@ -62,6 +73,7 @@ nav a:hover {
   border: 1px solid black;
 }
 
+/* Styles the main content area */
 .content {
   width: 75%;
   background-color: white;
@@ -69,34 +81,41 @@ nav a:hover {
   border: 1px solid black;
 }
 
+/* Styles headings */
 h1, h2, h3 {
   color: black;
 }
 
+/* Makes text easier to read */
 p, li {
   line-height: 1.5;
 }
 
+/* Styles images */
 img {
   max-width: 100%;
   border: 1px solid black;
   margin-top: 10px;
 }
 
+/* Styles tables */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
 }
 
+/* Adds borders to table, rows, and cells */
 table, th, td {
   border: 1px solid black;
 }
 
+/* Adds spacing inside table cells */
 th, td {
   padding: 8px;
 }
 
+/* Styles the footer */
 footer {
   background-color: black;
   color: white;
