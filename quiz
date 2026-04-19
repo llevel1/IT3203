@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic page setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header and navigation -->
+  <header id="main-header">
+    <div class="header-container">
+      <h1 class="site-title">The Web Browser: Past and Future</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="key_concepts.html">Key Concepts</a></li>
+          <li><a href="web_browser.html">Web Browser</a></li>
+          <li><a href="web_history.html">Web History</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main page layout -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>Quiz Directions</h2>
+      <p>Answer the questions using information from this website.</p>
+      <ul>
+        <li>1 fill-in-the-blank question</li>
+        <li>3 multiple-choice questions</li>
+        <li>1 multi-selection question</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Self-Assessment Quiz</h2>
+      <p>Test your knowledge about web browsers and web history.</p>
+
+      <!-- Quiz form -->
+      <form id="quizForm">
+        
+        <!-- Fill in the blank question -->
+        <div class="quiz-box">
+          <h3>1. Fill in the blank</h3>
+          <label for="q1">The person who created the World Wide Web was:</label><br>
+          <input type="text" id="q1" name="q1" placeholder="Type your answer here">
+        </div>
+
+        <!-- Multiple choice question 1 -->
+        <div class="quiz-box">
+          <h3>2. Multiple Choice</h3>
+          <p>What does HTML stand for?</p>
+          <label><input type="radio" name="q2" value="a"> Hyper Transfer Markup Language</label><br>
+          <label><input type="radio" name="q2" value="b"> HyperText Markup Language</label><br>
+          <label><input type="radio" name="q2" value="c"> HighText Machine Language</label>
+        </div>
+
+        <!-- Multiple choice question 2 -->
+        <div class="quiz-box">
+          <h3>3. Multiple Choice</h3>
+          <p>Which browser was released by Microsoft in 1995?</p>
+          <label><input type="radio" name="q3" value="a"> Firefox</label><br>
+          <label><input type="radio" name="q3" value="b"> Chrome</label><br>
+          <label><input type="radio" name="q3" value="c"> Internet Explorer</label>
+        </div>
+
+        <!-- Multiple choice question 3 -->
+        <div class="quiz-box">
+          <h3>4. Multiple Choice</h3>
+          <p>What does HTTP do?</p>
+          <label><input type="radio" name="q4" value="a"> It styles webpages</label><br>
+          <label><input type="radio" name="q4" value="b"> It is a protocol for web communication</label><br>
+          <label><input type="radio" name="q4" value="c"> It stores local bookmarks only</label>
+        </div>
+
+        <!-- Multi-selection question -->
+        <div class="quiz-box">
+          <h3>5. Multi-Selection</h3>
+          <p>Select all that are browser components:</p>
+          <label><input type="checkbox" name="q5" value="rendering"> Rendering Engine</label><br>
+          <label><input type="checkbox" name="q5" value="networking"> Networking</label><br>
+          <label><input type="checkbox" name="q5" value="keyboard"> Keyboard</label><br>
+          <label><input type="checkbox" name="q5" value="storage"> Data Storage</label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="quiz-buttons">
+          <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+
+      <!-- Quiz results appear here -->
+      <div id="results"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Created by Leann Levelsmier</p>
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="quiz.js"></script>
+</body>
+</html>
