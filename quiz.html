@@ -5,15 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz</title>
+
+  <!-- Connects this page to the shared CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header and navigation -->
+  <!-- Header and navigation used on every page -->
   <header id="main-header">
     <div class="header-container">
       <h1 class="site-title">The Web Browser: Past and Future</h1>
 
+      <!-- Main menu -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -38,76 +41,78 @@
         <li>3 multiple-choice questions</li>
         <li>1 multi-selection question</li>
       </ul>
+      <p>You need 4 out of 5 correct to pass.</p>
     </div>
 
     <div class="content">
       <h2>Self-Assessment Quiz</h2>
       <p>Test your knowledge about web browsers and web history.</p>
 
-      <!-- Quiz form -->
+      <!-- Quiz form starts here -->
       <form id="quizForm">
-        
-        <!-- Fill in the blank question -->
+
+        <!-- Question 1: fill in the blank -->
         <div class="quiz-box">
           <h3>1. Fill in the blank</h3>
-          <label for="q1">The person who created the World Wide Web was:</label><br>
+          <label for="q1">The person who created the World Wide Web was:</label>
           <input type="text" id="q1" name="q1" placeholder="Type your answer here">
         </div>
 
-        <!-- Multiple choice question 1 -->
+        <!-- Question 2: multiple choice -->
         <div class="quiz-box">
           <h3>2. Multiple Choice</h3>
           <p>What does HTML stand for?</p>
-          <label><input type="radio" name="q2" value="a"> Hyper Transfer Markup Language</label><br>
-          <label><input type="radio" name="q2" value="b"> HyperText Markup Language</label><br>
+          <label><input type="radio" name="q2" value="a"> Hyper Transfer Markup Language</label>
+          <label><input type="radio" name="q2" value="b"> HyperText Markup Language</label>
           <label><input type="radio" name="q2" value="c"> HighText Machine Language</label>
         </div>
 
-        <!-- Multiple choice question 2 -->
+        <!-- Question 3: multiple choice -->
         <div class="quiz-box">
           <h3>3. Multiple Choice</h3>
           <p>Which browser was released by Microsoft in 1995?</p>
-          <label><input type="radio" name="q3" value="a"> Firefox</label><br>
-          <label><input type="radio" name="q3" value="b"> Chrome</label><br>
+          <label><input type="radio" name="q3" value="a"> Firefox</label>
+          <label><input type="radio" name="q3" value="b"> Chrome</label>
           <label><input type="radio" name="q3" value="c"> Internet Explorer</label>
         </div>
 
-        <!-- Multiple choice question 3 -->
+        <!-- Question 4: multiple choice -->
         <div class="quiz-box">
           <h3>4. Multiple Choice</h3>
-          <p>What does HTTP do?</p>
-          <label><input type="radio" name="q4" value="a"> It styles webpages</label><br>
-          <label><input type="radio" name="q4" value="b"> It is a protocol for web communication</label><br>
-          <label><input type="radio" name="q4" value="c"> It stores local bookmarks only</label>
+          <p>What is HTTP used for?</p>
+          <label><input type="radio" name="q4" value="a"> Styling webpages</label>
+          <label><input type="radio" name="q4" value="b"> Web communication between browser and server</label>
+          <label><input type="radio" name="q4" value="c"> Drawing images on the page</label>
         </div>
 
-        <!-- Multi-selection question -->
+        <!-- Question 5: multi-selection -->
         <div class="quiz-box">
           <h3>5. Multi-Selection</h3>
           <p>Select all that are browser components:</p>
-          <label><input type="checkbox" name="q5" value="rendering"> Rendering Engine</label><br>
-          <label><input type="checkbox" name="q5" value="networking"> Networking</label><br>
-          <label><input type="checkbox" name="q5" value="keyboard"> Keyboard</label><br>
+          <label><input type="checkbox" name="q5" value="rendering"> Rendering Engine</label>
+          <label><input type="checkbox" name="q5" value="networking"> Networking</label>
+          <label><input type="checkbox" name="q5" value="keyboard"> Keyboard</label>
           <label><input type="checkbox" name="q5" value="storage"> Data Storage</label>
         </div>
 
-        <!-- Buttons -->
+        <!-- Buttons for submitting and resetting -->
         <div class="quiz-buttons">
           <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
-          <button type="reset">Reset</button>
+          <button type="button" onclick="resetQuiz()">Retake / Reset Quiz</button>
         </div>
       </form>
 
-      <!-- Quiz results appear here -->
+      <!-- Quiz results will appear here -->
       <div id="results"></div>
     </div>
   </div>
 
+  <!-- Footer -->
   <footer>
     <p>Created by Leann Levelsmier</p>
   </footer>
 
-  <!-- Link to JavaScript file -->
+  <!-- Connects the JavaScript file -->
   <script src="quiz.js"></script>
 </body>
 </html>
