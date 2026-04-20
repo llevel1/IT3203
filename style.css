@@ -123,12 +123,12 @@ img {
 /* Table styling */
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   margin-top: 14px;
-}
-
-table, th, td {
   border: 1px solid black;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 th {
@@ -138,6 +138,19 @@ th {
 th, td {
   padding: 10px;
   text-align: left;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Removes extra border on far right */
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+/* Removes extra border on bottom row */
+tr:last-child td {
+  border-bottom: none;
 }
 
 /* Footer styling */
