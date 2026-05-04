@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic setup for the page -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Browser</title>
@@ -8,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Header and menu -->
+  <!-- Header and navigation -->
   <header id="main-header">
     <div class="header-container">
       <h1 class="site-title">The Web Browser: Past and Future</h1>
@@ -18,7 +19,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="key_concepts.html">Key Concepts</a></li>
-          <li><a href="web_browser.html">Web Browser</a></li>
+          <li><a href="web_browser.html" class="active">Web Browser</a></li>
           <li><a href="web_history.html">Web History</a></li>
           <li><a href="references.html">References</a></li>
           <li><a href="quiz.html">Quiz</a></li>
@@ -27,78 +28,101 @@
     </div>
   </header>
 
+  <!-- Main content layout -->
   <div class="container">
     <div class="sidebar">
-      <h2>Browser Facts</h2>
+      <h2>Browser Topics</h2>
       <ul>
-        <li>Browsers retrieve web pages</li>
-        <li>They display HTML to users</li>
-        <li>They use HTTP requests</li>
-        <li>They can use cached data</li>
+        <li>What a browser does</li>
+        <li>Main browser components</li>
+        <li>How navigation works</li>
+        <li>Why browsers matter</li>
       </ul>
     </div>
 
     <div class="content">
       <h2>What Is a Web Browser?</h2>
+
+      <img src="images/browser-icon.png" alt="Web browser icon">
+
       <p>
-        A web browser is the application that lets users access information on websites.
-        When a user types a URL into the address bar, the browser gets the files from a web server or from the cache and displays them on the device screen.
+        A web browser is the software people use to access websites and other web content.
+        When a user enters a URL, the browser gets files from either a web server or the browser’s local storage, called the cache, and then displays that information on the user’s screen.
+        The browser reads HTML and also works with other common web resources such as CSS, JavaScript, and PDF files.
       </p>
 
-      <!-- List of browser parts -->
       <h3>Main Browser Components</h3>
+      <p>
+        The paper explains that modern browsers are built from several major parts.
+        These components work together so the browser can receive content, process it, and show it in a user-friendly way.
+      </p>
+
       <ul>
-        <li>User interface</li>
-        <li>Browser engine</li>
-        <li>Rendering engine</li>
-        <li>Networking</li>
-        <li>UI backend</li>
-        <li>JavaScript interpreter</li>
-        <li>Data storage</li>
+        <li><strong>User interface:</strong> the visible browser controls such as the address bar, back button, refresh button, bookmarks, and home button</li>
+        <li><strong>Browser engine:</strong> manages communication between the user interface and the rendering engine</li>
+        <li><strong>Rendering engine:</strong> receives the HTML content and displays it on the screen</li>
+        <li><strong>Networking:</strong> sends and receives HTTP requests from servers</li>
+        <li><strong>UI backend:</strong> supports basic window features such as widgets and fonts</li>
+        <li><strong>JavaScript interpreter:</strong> processes JavaScript code used on web pages</li>
+        <li><strong>Data storage:</strong> stores local browser data such as cookies and bookmarks</li>
       </ul>
 
-      <!-- Ordered list showing steps -->
-      <h3>How a Browser Works</h3>
+      <h3>Examples of Rendering Engines</h3>
+      <p>
+        Different browsers use different rendering engines.
+        The paper notes that Safari uses WebKit, Firefox uses Gecko, and Chrome uses Blink.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Browser</th>
+            <th>Rendering Engine</th>
+          </tr>
+          <tr>
+            <td>Safari</td>
+            <td>WebKit</td>
+          </tr>
+          <tr>
+            <td>Firefox</td>
+            <td>Gecko</td>
+          </tr>
+          <tr>
+            <td>Chrome</td>
+            <td>Blink</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>How Browser Navigation Works</h3>
+      <p>
+        Browser navigation involves several steps before a page appears on screen.
+        The browser process handles user input, decides whether the input is a search query or a URL, checks the cache, performs a DNS lookup if needed, connects to the server, receives the response, and prepares the page for rendering.
+      </p>
+
       <ol>
         <li>The user enters a URL or search term</li>
-        <li>The browser checks whether it is a search or a URL</li>
-        <li>The cache is checked first</li>
-        <li>If needed, the browser performs a DNS lookup</li>
-        <li>The browser connects to the server and sends a request</li>
-        <li>The response is received and prepared for rendering</li>
-        <li>The page is displayed to the user</li>
+        <li>The browser checks whether the input is a search query or a URL</li>
+        <li>The cache is checked for the resource</li>
+        <li>If the resource is not in the cache, the browser performs a DNS lookup</li>
+        <li>The browser gets the IP address and establishes a connection</li>
+        <li>The request is sent to the server</li>
+        <li>The server returns headers, a body, and related data</li>
+        <li>The browser prepares the response for rendering</li>
+        <li>The old document is cleared and the new page is committed</li>
+        <li>The rendering process displays the page on screen</li>
       </ol>
 
-    
-      
-      <table>
-        <tr>
-          <th>Component</th>
-          <th>Purpose</th>
-        </tr>
-        <tr>
-          <td>User Interface</td>
-          <td>The visible parts like buttons and address bar</td>
-        </tr>
-        <tr>
-          <td>Rendering Engine</td>
-          <td>Displays the content on the screen</td>
-        </tr>
-        <tr>
-          <td>Networking</td>
-          <td>Sends and receives HTTP requests</td>
-        </tr>
-        <tr>
-          <td>Data Storage</td>
-          <td>Stores local data like bookmarks and cookies</td>
-        </tr>
-      </table>
+      <h3>Why the Browser Is Important</h3>
+      <p>
+        The browser became one of the most widely used types of software because it gave ordinary users access to information from almost anywhere in the world.
+        The paper describes it as revolutionary and argues that it helped shape the modern internet by making global information sharing practical for everyday users.
+      </p>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>Created by Lhaman1 for IT3203</p>
+    <p>Created by Leann Levelsmier</p>
   </footer>
 
 </body>
