@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic setup for the page -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web History</title>
@@ -8,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Shared header -->
+  <!-- Header and navigation -->
   <header id="main-header">
     <div class="header-container">
       <h1 class="site-title">The Web Browser: Past and Future</h1>
@@ -19,7 +20,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="key_concepts.html">Key Concepts</a></li>
           <li><a href="web_browser.html">Web Browser</a></li>
-          <li><a href="web_history.html">Web History</a></li>
+          <li><a href="web_history.html" class="active">Web History</a></li>
           <li><a href="references.html">References</a></li>
           <li><a href="quiz.html">Quiz</a></li>
         </ul>
@@ -27,76 +28,157 @@
     </div>
   </header>
 
+  <!-- Main content layout -->
   <div class="container">
     <div class="sidebar">
-      <h2>Timeline</h2>
+      <h2>History Sections</h2>
       <ul>
-        <li>1990: WorldWideWeb created</li>
-        <li>1991: Line Mode Browser released</li>
-        <li>1994: Netscape Navigator released</li>
-        <li>1995: Internet Explorer released</li>
-        <li>2008: Chrome released</li>
+        <li>Early web creation</li>
+        <li>First browsers</li>
+        <li>Browser wars</li>
+        <li>Modern browsers</li>
+        <li>Current market share</li>
       </ul>
     </div>
 
     <div class="content">
       <h2>History of the Web Browser</h2>
+
+      <img src="images/web-history.png" alt="History of the web illustration">
+
+      <h3>Early Web Creation</h3>
       <p>
-        The first browser and web page editor was WorldWideWeb, created by Tim Berners-Lee in late 1990.
-        It only worked on NeXT computers at CERN.
-        The Line Mode Browser followed and was important because it could run on different operating systems. 
+        The first web browser and web page editor was WorldWideWeb, written by Sir Tim Berners-Lee in late 1990.
+        It was originally designed for NeXT computers at CERN.
+        The browser was part of the larger creation of the World Wide Web, which was intended to make information sharing easier and more open.
       </p>
 
-      <h3>Browser Wars</h3>
+      <h3>First Browsers</h3>
       <p>
-        In 1994, Netscape Navigator became popular because it could display text and graphics while the page was still loading.
-        In 1995, Microsoft released Internet Explorer with Windows, beginning the browser wars between Netscape and Microsoft. 
+        After WorldWideWeb, the Line Mode Browser became important because it could work on different operating systems.
+        It was designed to be simple enough to run on many computers and used a command-line interface that displayed only text.
+        Nicola Pellow helped develop and release it in 1991.
       </p>
 
-      <!-- Later browser developments -->
+      <p>
+        In 1993, the source code for WorldWideWeb was released into the public domain to support the idea that the web should be accessible to everyone.
+        In 1994, WorldWideWeb was renamed Nexus Browser to reduce confusion between the browser and the broader web itself, although it was later discontinued.
+      </p>
+
+      <h3>The First Browser War</h3>
+      <p>
+        In 1994, Netscape Navigator was released and quickly became popular because it could display text and graphics while the page was still downloading.
+        That made browsing faster and more convenient for users.
+        In 1995, Microsoft released Internet Explorer with Windows, beginning the first browser war between Netscape and Microsoft.
+      </p>
+
+      <p>
+        Netscape and Microsoft repeatedly released new versions through the rest of the decade.
+        Internet Explorer’s free distribution with Windows gave Microsoft a major advantage, while Netscape could not match that business model.
+        This contributed to Netscape Navigator’s decline.
+      </p>
+
+      <h3>The Second Browser War</h3>
+      <p>
+        In 1998, Netscape open-sourced its code and handed it to the Mozilla Foundation, which later released Mozilla Firefox.
+        The second browser war involved more than two competitors and included Internet Explorer, Firefox, Safari, and Opera.
+        During this period, browsers competed by adding features such as reopening closed tabs, spell checking, and HTML video support.
+      </p>
+
       <h3>Modern Browsers</h3>
-      <ul>
-        <li>Mozilla Firefox was first released in 2004</li>
-        <li>Safari was first released in 2003</li>
-        <li>Opera has existed since 1994</li>
-        <li>Google Chrome was first released in 2008</li>
-        <li>Microsoft later moved from Internet Explorer to Edge</li>
-      </ul>
+      <p>
+        The paper notes that Safari was first released in 2003, Firefox in 2004, and Chrome in 2008.
+        Opera had been around since 1994 and became known for simple features and support for portable devices.
+        Microsoft eventually ended Internet Explorer support and shifted to Edge in 2020, using Blink instead of EdgeHTML.
+      </p>
 
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Year</th>
+            <th>Browser Event</th>
+          </tr>
+          <tr>
+            <td>1990</td>
+            <td>WorldWideWeb created by Tim Berners-Lee</td>
+          </tr>
+          <tr>
+            <td>1991</td>
+            <td>Line Mode Browser released</td>
+          </tr>
+          <tr>
+            <td>1994</td>
+            <td>Netscape Navigator released</td>
+          </tr>
+          <tr>
+            <td>1995</td>
+            <td>Internet Explorer released</td>
+          </tr>
+          <tr>
+            <td>2003</td>
+            <td>Safari released</td>
+          </tr>
+          <tr>
+            <td>2004</td>
+            <td>Firefox released</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>Chrome released</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>Microsoft shifts support to Edge</td>
+          </tr>
+        </table>
+      </div>
 
-      <!-- Timeline table -->
-      <table>
-        <tr>
-          <th>Year</th>
-          <th>Event</th>
-        </tr>
-        <tr>
-          <td>1990</td>
-          <td>WorldWideWeb browser created</td>
-        </tr>
-        <tr>
-          <td>1991</td>
-          <td>Line Mode Browser released</td>
-        </tr>
-        <tr>
-          <td>1994</td>
-          <td>Netscape Navigator released</td>
-        </tr>
-        <tr>
-          <td>1995</td>
-          <td>Internet Explorer released</td>
-        </tr>
-        <tr>
-          <td>2008</td>
-          <td>Google Chrome released</td>
-        </tr>
-      </table>
+      <h3>Current Browser Landscape</h3>
+      <p>
+        Although hundreds of browsers have existed, the current market is concentrated in a small number of major products.
+        According to the paper’s StatCounter summary for January 2026, Chrome held 71.36% of global browser market share, Safari held 14.77%, Edge held 4.65%, Firefox held 2.23%, and Opera held 1.88%.
+        The paper argues that this pattern reflects not only technical quality but also default placement, platform ecosystems, and integration with operating systems and cloud services.
+      </p>
+
+      <div class="table-wrapper">
+        <table>
+          <tr>
+            <th>Browser</th>
+            <th>January 2026 Market Share</th>
+          </tr>
+          <tr>
+            <td>Chrome</td>
+            <td>71.36%</td>
+          </tr>
+          <tr>
+            <td>Safari</td>
+            <td>14.77%</td>
+          </tr>
+          <tr>
+            <td>Edge</td>
+            <td>4.65%</td>
+          </tr>
+          <tr>
+            <td>Firefox</td>
+            <td>2.23%</td>
+          </tr>
+          <tr>
+            <td>Opera</td>
+            <td>1.88%</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Conclusion</h3>
+      <p>
+        The browser helped transform the internet from a technical network into an everyday tool for communication, learning, and access to information.
+        The paper describes it as a revolutionary technology and even as a “killer app” because of how central it became to modern digital life.
+      </p>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>Created by Lhaman1 for IT3203</p>
+    <p>Created by Leann Levelsmier</p>
   </footer>
 
 </body>
