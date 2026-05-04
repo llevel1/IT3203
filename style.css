@@ -6,20 +6,24 @@ body {
   color: #111;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Header styling */
 #main-header {
   background-color: #d4af37;
-  padding: 18px 28px;
+  padding: 18px 24px;
   border-bottom: 3px solid black;
 }
 
-/* Layout for title and navigation */
+/* Title and navigation layout */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* Website title */
@@ -30,16 +34,23 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Navigation styling */
+/* Navigation */
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 10px;
+  margin: 0;
 }
 
 nav a {
@@ -48,7 +59,7 @@ nav a {
   color: black;
   background-color: #d9d9d9;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 6px;
   padding: 8px 12px;
   font-size: 15px;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -59,6 +70,13 @@ nav a:hover {
   color: white;
 }
 
+/* Current page link */
+nav a.active {
+  background-color: #ffffff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* Main page layout */
 .container {
   display: flex;
@@ -67,27 +85,24 @@ nav a:hover {
   max-width: 1100px;
   padding: 0 20px;
   align-items: flex-start;
-  box-sizing: border-box;
 }
 
-/* Sidebar styling */
+/* Sidebar */
 .sidebar {
   width: 25%;
   background-color: #dcdcdc;
   padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
-/* Main content styling */
+/* Main content */
 .content {
   width: 75%;
   background-color: white;
   padding: 24px;
   border: 1px solid black;
   border-radius: 8px;
-  box-sizing: border-box;
 }
 
 /* Headings */
@@ -105,12 +120,12 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Text styling */
+/* Text */
 p, li {
   line-height: 1.6;
 }
 
-/* Image styling */
+/* Images */
 img {
   display: block;
   max-width: 100%;
@@ -120,12 +135,19 @@ img {
   margin: 12px 0 18px 0;
 }
 
-/* Table styling */
+/* Responsive table wrapper */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 14px;
+}
+
+/* Tables */
 table {
   width: 100%;
+  min-width: 500px;
   border-collapse: separate;
   border-spacing: 0;
-  margin-top: 14px;
   border: 1px solid black;
   border-radius: 6px;
   overflow: hidden;
@@ -142,18 +164,16 @@ th, td {
   border-bottom: 1px solid black;
 }
 
-/* Removes extra border on far right */
 th:last-child,
 td:last-child {
   border-right: none;
 }
 
-/* Removes extra border on bottom row */
 tr:last-child td {
   border-bottom: none;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
   background-color: black;
   color: white;
@@ -162,7 +182,7 @@ footer {
   margin-top: 30px;
 }
 
-/* Quiz question boxes */
+/* Quiz styling */
 .quiz-box {
   background-color: #f7f7f7;
   border: 1px solid black;
@@ -175,15 +195,14 @@ footer {
   margin-top: 0;
 }
 
-/* Input styling */
 input[type="text"] {
-  width: 65%;
-  padding: 9px;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
   margin-top: 10px;
   border: 1px solid black;
   border-radius: 4px;
   font-size: 15px;
-  box-sizing: border-box;
 }
 
 .quiz-box label {
@@ -191,7 +210,6 @@ input[type="text"] {
   margin-top: 8px;
 }
 
-/* Button area */
 .quiz-buttons {
   margin-top: 20px;
 }
@@ -203,9 +221,9 @@ input[type="text"] {
   border-radius: 5px;
   padding: 10px 14px;
   margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 15px;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .quiz-buttons button:hover {
@@ -213,7 +231,6 @@ input[type="text"] {
   color: white;
 }
 
-/* Results box */
 .results-box {
   margin-top: 20px;
   padding: 18px;
@@ -230,7 +247,6 @@ input[type="text"] {
   margin-top: 12px;
 }
 
-/* Result colors */
 .correct-text,
 .pass-text {
   color: green;
@@ -243,10 +259,12 @@ input[type="text"] {
   font-weight: bold;
 }
 
-/* Responsive layout for smaller screens */
+/* Screen size 1: tablet and smaller */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
+    gap: 18px;
+    margin: 20px auto;
   }
 
   .sidebar,
@@ -254,12 +272,70 @@ input[type="text"] {
     width: 100%;
   }
 
-  input[type="text"] {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-left: 0;
     width: 100%;
   }
 
-  nav li {
-    margin-left: 6px;
-    margin-bottom: 6px;
+  nav ul {
+    justify-content: flex-start;
+  }
+
+  .site-title {
+    font-size: 26px;
+  }
+}
+
+/* Screen size 2: phones */
+@media (max-width: 600px) {
+  #main-header {
+    padding: 14px 16px;
+  }
+
+  .container {
+    padding: 0 12px;
+  }
+
+  .content,
+  .sidebar {
+    padding: 16px;
+  }
+
+  .site-title {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  table {
+    min-width: 420px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .quiz-buttons button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  input[type="text"] {
+    font-size: 16px;
   }
 }
