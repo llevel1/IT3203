@@ -130,8 +130,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  border: 1px solid black;
-  border-radius: 6px;
   margin: 12px 0 18px 0;
 }
 
